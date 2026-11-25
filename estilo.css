@@ -1,0 +1,18 @@
+:root { --fondo: #f7f7f4; --texto: #23262b; --suave: #5d636d; --linea: #dcdcd5; --acento: #1f5fa8; --tarjeta: #ffffff; }
+@media (prefers-color-scheme: dark) {
+  :root { --fondo: #16181c; --texto: #e8e8e4; --suave: #a4a9b2; --linea: #343841; --acento: #8dbcf2; --tarjeta: #1e2126; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fondo); color: var(--texto); font: 17px/1.65 system-ui, "Segoe UI", Roboto, sans-serif; }
+header, main, footer { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+header { padding-top: 28px; display: flex; flex-wrap: wrap; gap: 8px 20px; justify-content: space-between; align-items: baseline; }
+header .marca { font-weight: 700; color: var(--texto); text-decoration: none; }
+nav { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 15px; }
+a { color: var(--acento); }
+h1 { font-size: clamp(30px, 6vw, 42px); line-height: 1.15; margin: 48px 0 12px; text-wrap: balance; }
+h2 { font-size: 21px; margin: 36px 0 8px; }
+.entrada { font-size: 19px; color: var(--suave); margin-top: 0; }
+.tarjeta { background: var(--tarjeta); border: 1px solid var(--linea); border-radius: 10px; padding: 16px 20px; margin: 28px 0; }
+li { margin: 6px 0; }
+code { overflow-wrap: anywhere; }
+footer { margin-top: 56px; padding-top: 20px; padding-bottom: 40px; border-top: 1px solid var(--linea); color: var(--suave); font-size: 15px; }
